@@ -1,0 +1,15 @@
+# ENV file
+*.env
+
+# Compiled assets
+/public/assets/css/*
+/public/assets/js/*
+
+# Storage
+/storage/logs/*
+!/storage/logs/README.md
+
+# Vendor Libraries
+/bower_components/
+/node_modules/
+/vendor/
