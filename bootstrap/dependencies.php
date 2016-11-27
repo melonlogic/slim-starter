@@ -9,10 +9,10 @@ use Slim\Views\PhpRenderer;
 $container = $app->getContainer();
 
 // View Renderer
-$container['renderer'] = function ($c) {
-    $settings = $c->get('settings')['renderer'];
+$container['view'] = function ($c) {
+    $settings = $c->get('settings')['view'];
 
-    return new PhpRenderer($settings['template_path']);
+    return new PhpRenderer($settings['view_path']);
 };
 
 // Monolog
