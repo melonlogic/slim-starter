@@ -38,11 +38,6 @@ class Controller
     {
         return array_merge([
             'baseUrl' => $request->getUri()->getBasePath(),
-            'googleMapsApiKey' => \env('GOOGLE_MAPS_API_KEY', ''),
-            'csrf' => [
-                'name' => $request->getAttribute('csrf_name'),
-                'value' => $request->getAttribute('csrf_value'),
-            ],
         ], $params);
     }
 }
