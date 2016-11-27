@@ -3,8 +3,7 @@
 use App\Helpers\StringHelper;
 
 if (!function_exists('env')) {
-    function env($key, $default = null)
-    {
+    function env($key, $default = null) {
         $value = getenv($key);
 
         if ($value === false) {
