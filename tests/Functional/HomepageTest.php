@@ -12,7 +12,7 @@ class HomepageTest extends BaseTestCase
         $response = $this->runApp('GET', '/');
 
         $this->assertEquals(200, $response->getStatusCode());
-        $this->assertContains('slimframework', (string)$response->getBody());
+        $this->assertContains('Slim', (string)$response->getBody());
         $this->assertNotContains('Hello', (string)$response->getBody());
     }
 
@@ -21,10 +21,10 @@ class HomepageTest extends BaseTestCase
      */
     public function testGetHomepageWithGreeting()
     {
-        $response = $this->runApp('GET', '/name');
+        $response = $this->runApp('GET', '/Tester');
 
         $this->assertEquals(200, $response->getStatusCode());
-        $this->assertContains('Hello name!', (string)$response->getBody());
+        $this->assertContains('Hello Tester!', (string)$response->getBody());
     }
 
     /**
