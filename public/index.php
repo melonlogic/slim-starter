@@ -31,6 +31,9 @@ require __DIR__ . '/../bootstrap/helpers.php';
 $dotenv = new Dotenv(__DIR__ . '/../');
 $dotenv->load();
 
+// Start PHP session
+session_start();
+
 // Instantiate the app
 $settings = require __DIR__ . '/../bootstrap/settings.php';
 $app = new App($settings);
