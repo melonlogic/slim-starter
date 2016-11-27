@@ -26,7 +26,7 @@
             "App\\": "app/"
         },
         "files": [
-            "app/Helpers/Str.php"
+            "app/Helpers/StringHelper.php"
         ]
     },
     "autoload-dev": {
