@@ -1,0 +1,19 @@
+// Typography style rules
+html,
+body {
+    color: $black;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 1.3;
+}
+
+.page-header {
+    margin-bottom: 0;
+    font-size: 4em;
+    font-weight: 200;
+    color: $green;
+}
+
+.page-subheader {
+    color: $grey;
+}

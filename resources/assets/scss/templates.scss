@@ -1,0 +1,18 @@
+// Template-specific style rules
+
+// Home Page
+.home-page {
+    margin: 30px;
+    text-align: center;
+    font-size: 18px;
+
+    .welcome-text {
+        height: 300px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
