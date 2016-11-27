@@ -5,10 +5,13 @@ use Monolog\Logger;
 return [
     'settings' => [
         // IC Settings
-        'addContentLengthHeader' => \env('ADD_CONTENT_LENGTH_HEADER', false),
-        'determineRouteBeforeAppMiddleware' => \env('DETERMINE_ROUTE_BEFORE_MIDDLEWARE', true),
+        'determineRouteBeforeAppMiddleware' => \env('APP_DETERMINE_ROUTE_BEFORE_MIDDLEWARE', true),
+        'routerCacheFile' => \env('APP_ROUTER_CACHE_FILE', true),
+
+        // Debugging
+        'addContentLengthHeader' => \env('DEBUG_ADD_CONTENT_LENGTH_HEADER', false),
+        'debug' => \env('DEBUG_DISPLAY_ERRORS', true),
         'displayErrorDetails' => \env('DEBUG_DISPLAY_ERROR_DETAILS', false),
-        'routerCacheFile' => \env('ROUTER_CACHE_FILE', true),
 
         // Renderer settings
         'view' => [
