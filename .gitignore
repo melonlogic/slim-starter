@@ -6,6 +6,7 @@
 /public/assets/js/*
 
 # Storage
+/storage/cache/*
 /storage/logs/*
 !/storage/logs/README.md
 

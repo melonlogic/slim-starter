@@ -6,7 +6,7 @@ return [
     'settings' => [
         // IC Settings
         'determineRouteBeforeAppMiddleware' => \env('APP_DETERMINE_ROUTE_BEFORE_MIDDLEWARE', true),
-        'routerCacheFile' => \env('APP_ROUTER_CACHE_FILE', false),
+        'routerCacheFile' => __DIR__ . '/../storage/cache/routes.cache',
 
         // Debugging
         'addContentLengthHeader' => \env('DEBUG_ADD_CONTENT_LENGTH_HEADER', false),
