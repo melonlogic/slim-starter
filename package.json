@@ -20,6 +20,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-clean-css": "^2.0.10",
     "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.2",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
@@ -27,8 +28,11 @@
     "jshint-stylish": "^2.2.0",
     "lodash": "^4.14.1",
     "node-sass": "^3.8.0",
-    "pump": "^1.0.1"
+    "pump": "^1.0.1",
+    "xtend": "^4.0.1"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }
